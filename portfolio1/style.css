@@ -912,3 +912,104 @@ font-size:1.6rem;
     background: black;
     color: white;
 }
+
+
+
+/*========================================
+        EVENTS
+========================================*/
+
+.events-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    margin-bottom:60px;
+
+}
+
+.event-card{
+
+    background:#181c26;
+    border-radius:20px;
+    padding:35px;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.4s;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.event-card:hover{
+
+    transform:translateY(-8px);
+    border-color:#c8a96a;
+    box-shadow:0 20px 40px rgba(200,169,106,.18);
+
+}
+
+.event-card h3{
+
+    color:#c8a96a;
+    font-size:2rem;
+    margin-bottom:25px;
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+.event-card ul{
+
+    list-style:none;
+
+}
+
+.event-card li{
+
+    padding:12px 0;
+    border-bottom:1px solid rgba(255,255,255,.08);
+    color:#ddd;
+
+}
+
+.event-card li:last-child{
+
+    border:none;
+
+}
+
+.award{
+
+    margin-bottom:25px;
+    padding-left:18px;
+    border-left:4px solid #c8a96a;
+
+}
+
+.award span{
+
+    color:#c8a96a;
+    font-weight:600;
+    display:block;
+    margin-bottom:8px;
+
+}
+
+.award strong{
+
+    color:white;
+
+}
+
+/* Odkazy v kontaktoch */
+
+.contact-grid a{
+    color:#d8d8d8;
+    transition:.3s;
+}
+
+.contact-grid a:hover{
+    color:#c8a96a;
+}
+
+.contact-grid a::after{
+    display:none;
+}
